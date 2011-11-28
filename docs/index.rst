@@ -12,6 +12,14 @@ Contents:
    :maxdepth: 2
 
 
+API/Reference Docs
+--------------------
+
+.. toctree::
+   :maxdepth: 2
+
+   reference_metrics
+
 
 Indices and tables
 ==================
@@ -19,4 +27,3 @@ Indices and tables
 * :ref:`genindex`
 * :ref:`modindex`
 * :ref:`search`
-
