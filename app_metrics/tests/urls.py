@@ -1,10 +1,9 @@
-from django.conf.urls.defaults import * 
-from django.conf import settings 
-from django.contrib import admin 
+from django.conf.urls.defaults import include, patterns, url
+from django.contrib import admin
 
-admin.autodiscover() 
+admin.autodiscover()
 
-urlpatterns = patterns('', 
-        (r'^admin/', include(admin.site.urls)),
-        (r'^admin/metrics/', include('app_metrics.urls')),
+urlpatterns = patterns('',
+    url(r'^admin/', include(admin.site.urls)),
+    url(r'^admin/metrics/', include('app_metrics.urls')),
 )
