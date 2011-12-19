@@ -21,6 +21,12 @@ Contents:
    changelog
 
 
+API:
+
+.. toctree::
+    :maxdepth: 1
+
+    ref/utils
 
 Indices and tables
 ==================
