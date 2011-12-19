@@ -3,8 +3,11 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to django-app-metrics's documentation!
-==============================================
+==================
+Django App Metrics
+==================
+Django App Metrics allows you to capture and report on various events in your 
+applications.
 
 Contents:
 
@@ -12,6 +15,7 @@ Contents:
    :maxdepth: 2
 
    install
+   usage
    settings
    backends
    changelog
