@@ -2,6 +2,8 @@
 Usage
 =====
 
+Example Code
+============
 The utility functions ``create_metric`` and ``metric`` are the main API hooks to app_metrics.
 
 Example::
@@ -29,8 +31,11 @@ Example::
     # Increment the metric by some other number
     metric('new_user_signup', 4)
 
-Commands
-========
+Management Commands
+===================
+
+metrics_aggregate
+-----------------
 
 Aggregate metric items into daily, weekly, monthly, and yearly totals
 It's fairly smart about it, so you're safe to run this as often as you
@@ -38,6 +43,13 @@ like::
 
     manage.py metrics_aggregate
 
-Send email reports to users::
+metrics_sent_mail
+-----------------
+
+Send email reports to users. The email will be sent out using django_mailer_'s ``send_htmlmailer`` if it is installed, otherwise defaults to django.core.mail_. Can be called like::
 
     manage.py metrics_send_mail
+
+
+.. _django_mailer: https://github.com/jtauber/django-mailer/
+.. _django.core.mail: https://docs.djangoproject.com/en/1.3/topics/email/
