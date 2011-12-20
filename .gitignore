@@ -1,6 +1,6 @@
 syntax: glob
 *pyc
-*swp
+*sw[op]
 _build
 _static
 *egg-info
