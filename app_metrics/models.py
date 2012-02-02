@@ -86,7 +86,8 @@ class MetricWeek(models.Model):
 
     def __unicode__(self): 
         return "'%s' for week %d of %d" % (self.metric.name, 
-                                           self.created.strftime("%m"))
+                                           self.created.strftime("%m"),
+                                           self.created.strftime("%Y"))
 
 class MetricMonth(models.Model): 
     """ Aggregation of Metrics on monthly basis """ 
